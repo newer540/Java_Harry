@@ -13,8 +13,8 @@ package chapter3;
                 sum += i; // переменная i доступна во всем цикле
                 fact *= i;
                 // однако здесь переменная i недоступна
-                System.out.println("Cyммa: " + sum);
-                System.out.println("Фaктopиaл: " + fact);
+                System.out.println("Summ: " + sum);
+                System.out.println("Factorial: " + fact);
             }
         }
     }

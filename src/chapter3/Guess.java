@@ -6,8 +6,8 @@ class Guess {
         char ch, ignore, answer = 'S';
 
         do {
-            System.out.println("Задумана буква из диапазона A-Z");
-            System.out.print("Попытайтесь ее угадать: ");
+            System.out.println(" letter A-Z");
+            System.out.print("try to guess it: ");
 
             ch = (char) System.in.read(); // получить символ с клавиатуры
             do {
@@ -16,11 +16,11 @@ class Guess {
 
             if (ch == answer) System.out.println("** Correct! **");
             else {
-                System.out.print(" Попробуйте букву ");
+                System.out.print(" try ");
                 //сложенный оператор If
                 if (ch < answer)
-                    System.out.println("ближе к концу алфавита");
-                else System.out.println("ближе к началу алфавита");
+                    System.out.println("closer to the end");
+                else System.out.println("closer to the start");
 
             }
         } while (answer != ch);

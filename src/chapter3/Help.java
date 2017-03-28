@@ -7,26 +7,26 @@ public class Help {
     public static void main (String args[])
         throws java.io.IOException {
             char choice;
-            System.out.println("РЎРїСЂР°РІРєР°:\n1. if\n2. switch\nР’С‹Р±РµСЂРёС‚Рµ:");
+            System.out.println("Справка:\n1. if\n2. switch\nВыберите:");
             choice = (char) System.in.read();
             System.out.println("\n");
         switch (choice) {
             case '1':
-                System.out.println("РћРїРµСЂР°С‚РѕСЂ if:\n");
-                System.out.println("if{ycР»oРІРёe) РѕРїРµСЂР°С‚РѕСЂ;");
-                System.out.println ("else РѕРїРµСЂР°С‚РѕСЂ;");
+                System.out.println("Оператор if:\n");
+                System.out.println("if{ycлoвиe) оператор;");
+                System.out.println ("else оператор;");
                 break;
             case '2':
-                    System.out.println("OРїepaС‚op switch:\n");
-                    System.out.println("switch(РІС‹paР¶eРЅРёe) {");
-                    System.out.println(" case РєРѕРЅСЃС‚Р°РЅС‚Р°:");
-                    System.out.println(" РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РѕРїРµСЂР°С‚РѕСЂРѕРІ");
+                    System.out.println("Oпepaтop switch:\n");
+                    System.out.println("switch(выpaжeниe) {");
+                    System.out.println(" case константа:");
+                    System.out.println(" последовательность операторов");
                     System.out.println(" break;");
                     System.out.println(" // ... ");
                     System.out.println("}");
                     break;
             default:
-                    System.out.print("Р—aРїpoc РЅРµ РЅР°Р№РґРµРЅ.");
+                    System.out.print("Зaпpoc не найден.");
         }
 
     }
