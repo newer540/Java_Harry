@@ -9,7 +9,7 @@ public class Final {
         char ch;
         int quant = 0;
 
-        System.out.println("Введите символы с клавиатруры. \n Для остановки нажмите '.'");
+        System.out.println("Input any key.\nInput a dot to stop.");
         do {
             ch = (char) System.in.read();
             if (ch >= 'a' & ch <= 'z') {
