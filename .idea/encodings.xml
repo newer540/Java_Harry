@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/src/chapter3/Break4.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/chapter3/BreakDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/chapter3/BreakDemo2.java" charset="windows-1251" />
@@ -8,11 +8,15 @@
     <file url="file://$PROJECT_DIR$/src/chapter3/Final.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/chapter3/FindFac.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/chapter3/Help.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/chapter3/Help2.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/chapter4/Qwqe.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/chapter4/VehicleDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/test/BlockDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/test/Example3.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/test/IfDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/test/Moon.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/test/ScopeDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/test/Sound.java" charset="windows-1251" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

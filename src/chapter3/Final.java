@@ -1,31 +1,26 @@
 package chapter3;
 
-/**
- * Created by harry on 02-Apr-17.
- */
-public class Final {
+class Final {
     public static void main(String args[])
             throws java.io.IOException {
+        int num = 0;
         char ch;
-        int quant = 0;
 
-        System.out.println("Input any key.\nInput a dot to stop.");
+        System.out.println("Введите символ 'a-z' 'A'Z'\nДля отстановски нажмите точку.");
+
         do {
             ch = (char) System.in.read();
             if (ch >= 'a' & ch <= 'z') {
+                num++;
                 ch -= 32;
-                quant++;
-                System.out.println(ch);
+                System.out.print(ch);
             } else if (ch >= 'A' & ch <= 'Z') {
+                num++;
                 ch += 32;
-                quant++;
-                System.out.println(ch);
-
+                System.out.print(ch);
             }
-
         } while (ch != '.');
-        System.out.println("changes " + quant);
-
+        System.out.println("Конец операции. Изменений: " + num);
     }
 }
 
