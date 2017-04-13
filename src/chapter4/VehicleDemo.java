@@ -18,7 +18,7 @@ class VehicleDemo {
         int range1, range2;
 
         //Присвоить значения полям в объекте minivan
-        minivan.passengers =7;
+        minivan.passengers = 7;
         minivan.fuelcap = 16;
         minivan.mpg = 21;
 
