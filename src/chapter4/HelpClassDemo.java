@@ -33,7 +33,7 @@ class Help {
                 System.out.println("Oпepaтop do-while:\n");
                 System.out.println("do {");
                 System.out.println(" оператор;");
-                System.out.println("} while {условие;");
+                System.out.println("} while {условие;)");
                 break;
             case '6':
                 System.out.println("Oпepaтop break:\n");
@@ -69,7 +69,7 @@ class Help {
                 throws java.io.IOException {
             char choice, ignore;
             Help hlpobj = new Help();
-            for (; ; ) {
+            for (;;) {
                 do {
                     hlpobj.showmenu();
                     choice = (char) System.in.read();
