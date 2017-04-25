@@ -17,6 +17,7 @@ class Bubble {
         System.out.print("Original array is:");
         for(int i=0; i < size; i++)
             System.out.print(" " + nums[i]);
+
         System.out.println();
 
         //This is the Bubble sort
