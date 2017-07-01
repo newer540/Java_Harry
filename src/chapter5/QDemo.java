@@ -7,8 +7,8 @@ package chapter5;
 class Quene {
     char q[]; //массив для хранения элементов очереди
     int putloc, getloc; // индексы для вставки и извлечения
+                        // элементов очереди
 
-    // элементов очереди
     Quene(int size) {
         q = new char[size + 1];
         putloc = getloc = 0;
@@ -46,10 +46,17 @@ class QDemo {
         System.out.println("Использование очереди bigQ для сохранения " +
                 "алфавита");
         // Помеcтить буквенные символы в очередь bigQ
-        for (i = 0; i < 26; i++) {
+        for (i = 0; i < 26; i++)
+            bigQ.put ((char) ('A' + i));
+
+        // Извлечь буквенные символы из очереди bigQ для и
+        // отобразить
+        System.out.print("Coдepжимoe очереди ЬigQ: ");
+        for (i=0; i < 26; i++) {
             ch = bigQ.get();
             if (ch != (char) 0) System.out.print(ch);
         }
+
         System.out.println("\n");
 
         System.out.println("Использование очереди smallQ для генерации " +

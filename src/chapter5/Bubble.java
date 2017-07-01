@@ -22,7 +22,7 @@ class Bubble {
 
         //This is the Bubble sort
         for(a=1; a < size; a++)
-            for (b=size-1; b>=a; b--) {
+            for (b=1; b < size; b++) {
             if (nums[b-1] > nums[b]) { //if out of order exchange elements
                 t = nums[b-1];
                 nums[b-1] = nums[b];
