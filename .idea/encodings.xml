@@ -18,6 +18,8 @@
     <file url="file://$PROJECT_DIR$/src/chapter5/Exer3.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/chapter5/Phone.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/chapter5/QDemo.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/ownwork/Exer5.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/ownwork/Name.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/ownwork/Xten.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/test/BlockDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/test/Example3.java" charset="windows-1251" />
@@ -26,6 +28,7 @@
     <file url="file://$PROJECT_DIR$/src/test/Moon.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/test/ScopeDemo.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/test/Sound.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/test2/Side_effects.java" charset="windows-1251" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
