@@ -13,7 +13,6 @@ public class InputAnyNumber {
 
         int number;
         int result = 1;
-        int e;
         System.out.println(" ¬ведите число от 1 до 20");
         Scanner sc = new Scanner(System.in);
         number = sc.nextInt();
