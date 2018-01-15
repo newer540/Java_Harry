@@ -1,17 +1,12 @@
 package codewars;
 
 class Reverse {
-    char Z;
-    int i = 0;
     public String reverse(String str) {
-        char Arr [] = str.toCharArray();
-        int N = str.length();
-        Z = Arr[i];
-        Arr [i] = Arr [N];
-        Arr[N] = Z;
-        reverse(str.substring(i+1, N-1));
-        String Reversed = new String(Arr);
-        return Reversed;
+        int len = str.length();
+        if(len == 1) return str;
+        return str.charAt(len - 1) + reverse(str.substring(0, len-1));
+
+
     }
 }
 public class ReverseDemo{
