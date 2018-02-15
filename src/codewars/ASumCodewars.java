@@ -15,5 +15,26 @@ findNb(1071225) --> 45
 findNb(91716553919377) --> -1
 */
 
+class ASum {
+    public static long findNb(long m) {
+        int counter = 0;
+        int i = 1;
+        long index = m;
+        while (index > 0) {
+            index = index - (long) Math.pow(i, 3);
+            counter++;
+            i++;
+            if (index == 0)
+                return counter;
+            else if (index - Math.pow(i, 3) < 0)
+                return -1;
+        }
+        return counter;
+    }
+}
+
 public class ASumCodewars {
+    public static void main(String args[]) {
+        System.out.println(ASum.findNb(2268500383808388900L));
+    }
 }
