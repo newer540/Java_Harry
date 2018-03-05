@@ -24,17 +24,19 @@ With floats it can happen that results depends on the operations order. To calcu
 (3600 * delta_distance) / s. */
 class GpsSpeed {
     public static int gps(int s, double[] x) {
-        double[] sections = new double[x.length - 1];
-        double[] speed = new double[sections.length];
+        if (x.length <= 1) return 0;
+        double[] deltaDistance = new double[x.length - 1];
+        double[] hourlySpeed = new double[x.length - 1];
         double highSpeed = 0;
         for (int i = 0; i < x.length - 1; i++) {
-            sections[i] = x[i + 1] - x[i];
+            deltaDistance[i] = x[i + 1] - x[i];
         }
-        for (int i = 0; i < sections.length; i++) {
-            speed[i] = 3600 * sections[i] / s;
+        for (int i = 0; i < hourlySpeed.length; i++) {
+            hourlySpeed[i] = 3600 * deltaDistance[i] / s;
         }
-        for (int i = 0; i < speed.length - 1; i++) {
-            if (speed[i] < speed[i + 1]) highSpeed = speed[i + 1];
+        for (int i = 0; i < hourlySpeed.length; i++) {
+            if (highSpeed < hourlySpeed[i]) highSpeed = hourlySpeed[i];
+
         }
         return (int) highSpeed;
     }
@@ -42,7 +44,7 @@ class GpsSpeed {
 
 public class SpeedControlCodewars {
     public static void main(String args[]) {
-        double ex[] = {0.0, 0.19, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25};
-        System.out.println(GpsSpeed.gps(15, ex));
+        double ex[] = {0.0, 0.11, 0.22, 0.33, 0.44, 0.65, 1.08, 1.26, 1.68, 1.89, 2.1, 2.31, 2.52, 3.25};
+        System.out.println(GpsSpeed.gps(12, ex));
     }
 }
